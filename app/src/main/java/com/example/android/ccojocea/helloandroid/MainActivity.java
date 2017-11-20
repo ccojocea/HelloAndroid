@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         /*
-        * Programatically check API to change navigationBarColor
+        * Programmatically check API to change navigationBarColor
         * Used values-v21 folder with styles.xml to do this just with xml
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.DONUT) {
             getWindow().setNavigationBarColor(@ColorInt int color)
