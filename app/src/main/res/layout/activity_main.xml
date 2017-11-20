@@ -8,41 +8,41 @@
     tools:context="com.example.android.ccojocea.helloandroid.MainActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:src="@drawable/vr_transp"/>
-
-    <ImageView
         android:id="@+id/udacity_big_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/udacity3" />
+        android:src="@drawable/udacity" />
 
-    <RelativeLayout
+    <TextView
+        android:id="@+id/imagine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/udacity_big_text">
+        android:layout_below="@id/udacity_big_text"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/imagine"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/big_font"
+        android:textStyle="bold" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="fitStart"
-            android:src="@drawable/boxesvertical"/>
-
-    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagine"
+        android:scaleType="fitStart"
+        android:src="@drawable/boxesvertical" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/activity_vertical_margin">
+            android:layout_marginBottom="@dimen/activity_vertical_margin_small">
 
             <ImageView
                 android:id="@+id/udacity_logo"
@@ -65,7 +65,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/activity_vertical_margin">
+            android:layout_marginBottom="@dimen/activity_vertical_margin_small">
 
             <ImageView
                 android:id="@+id/location_icon"
@@ -76,28 +76,20 @@
                 android:src="@drawable/ic_location_city_white_24dp" />
 
             <TextView
-                android:id="@+id/address_line_1"
+                android:id="@+id/address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/location_icon"
                 android:autoLink="map"
-                android:text="@string/address_line_1"
-                android:textColor="@color/colorText" />
-
-            <TextView
-                android:id="@+id/address_line_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/address_line_1"
-                android:layout_toRightOf="@id/location_icon"
-                android:text="@string/address_line_2"
+                android:text="@string/address_lines"
+                android:maxLines="2"
                 android:textColor="@color/colorText" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/activity_vertical_margin">
+            android:layout_marginBottom="@dimen/activity_vertical_margin_small">
 
             <ImageView
                 android:id="@+id/phone_icon"
@@ -141,6 +133,11 @@
 
     </LinearLayout>
 
-
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/vr_transp" />
 
 </RelativeLayout>
