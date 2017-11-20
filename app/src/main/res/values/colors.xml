@@ -5,4 +5,7 @@
     <color name="colorAccent">#B3E5FC</color>
     <color name="colorText">#B3E5FC</color>
     <color name="navigationBarColor">#37474F</color>
+    <color name="colorStart">#37474F</color>
+    <color name="colorCenter">#546E7A</color>
+    <color name="colorEnd">#37474F</color>
 </resources>

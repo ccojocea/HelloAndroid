@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/gradient"
     android:padding="@dimen/padding"
     tools:context="com.example.android.ccojocea.helloandroid.MainActivity">
 
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imagine"
         android:adjustViewBounds="true"
-        android:scaleType="fitXY"
+        android:scaleType="fitStart"
         android:src="@drawable/boxesvertical" />
 
     <LinearLayout
