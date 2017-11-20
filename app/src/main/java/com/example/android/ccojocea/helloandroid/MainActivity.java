@@ -1,5 +1,7 @@
 package com.example.android.ccojocea.helloandroid;
 
+import android.os.Build;
+import android.support.annotation.ColorInt;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
@@ -22,5 +24,13 @@ public class MainActivity extends AppCompatActivity {
         } else {
             setContentView(R.layout.activity_main_small);
         }
+
+        /*
+        * Programatically check API to change navigationBarColor
+        * Used values-v21 folder with styles.xml to do this just with xml
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.DONUT) {
+            getWindow().setNavigationBarColor(@ColorInt int color)
+        }
+        */
     }
 }

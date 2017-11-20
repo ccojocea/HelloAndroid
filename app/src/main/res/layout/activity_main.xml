@@ -30,6 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imagine"
+        android:adjustViewBounds="true"
         android:scaleType="fitStart"
         android:src="@drawable/boxesvertical" />
 
@@ -81,8 +82,8 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/location_icon"
                 android:autoLink="map"
-                android:text="@string/address_lines"
                 android:maxLines="2"
+                android:text="@string/address_lines"
                 android:textColor="@color/colorText" />
         </RelativeLayout>
 
@@ -138,6 +139,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:alpha="0.8"
         android:src="@drawable/vr_transp" />
 
 </RelativeLayout>

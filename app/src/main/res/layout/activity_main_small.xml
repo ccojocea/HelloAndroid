@@ -68,8 +68,8 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/location_icon"
                 android:autoLink="map"
-                android:text="@string/address_lines"
                 android:maxLines="2"
+                android:text="@string/address_lines"
                 android:textColor="@color/colorText" />
         </RelativeLayout>
 
