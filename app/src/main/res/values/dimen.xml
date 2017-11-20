@@ -6,4 +6,6 @@
     <dimen name="padding">16dp</dimen>
     <dimen name="big_font">24sp</dimen>
     <dimen name="font_xlarge">48sp</dimen>
+    <dimen name="navigation_bar_width">32dp</dimen>
+    <dimen name="navigation_bar_height">32dp</dimen>
 </resources>
