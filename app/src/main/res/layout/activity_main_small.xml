@@ -23,7 +23,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/view"
+        android:layout_alignParentBottom="true"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -133,16 +133,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_above="@id/view"
+        android:layout_alignParentBottom="true"
         android:scaleX="0.7"
         android:scaleY="0.7"
         android:src="@drawable/vr_transp" />
-
-    <!-- View added to go under the navigation bar / there were clipping issues -->
-    <View
-        android:id="@+id/view"
-        android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/navigation_bar_height" />
 
 </RelativeLayout>

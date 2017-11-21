@@ -17,17 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        /*
-        *   Set gradient to system bars
-         */
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            Window w = getWindow();
-            w.addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-            w.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-        }
 
         super.onCreate(savedInstanceState);
-
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         if (displayMetrics.widthPixels > SCREEN_WIDTH_PIXELS) {
@@ -35,13 +26,5 @@ public class MainActivity extends AppCompatActivity {
         } else {
             setContentView(R.layout.activity_main_small);
         }
-
-        /*
-        * Programmatically check API to change navigationBarColor
-        * Used values-v21 folder with styles.xml to do this just with xml
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.DONUT) {
-            getWindow().setNavigationBarColor(@ColorInt int color)
-        }
-        */
     }
 }
